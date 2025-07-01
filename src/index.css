@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+  background-color: #f6f8fa;
+  padding: 10px;
+}
+
+:root {
+  --gray: #333;
+  --green: #4BAE4F;
+  --light-gray: #edeef0;
+}
+
+.container {
+  background-color: #fff;
+  max-width: 500px;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin: 150px auto 40px;
+}
+
+.container .title  { 
+  display: flex;
+  gap: 10px;
+}
+
+.container .form input {
+  border-radius: 7px;
+  height: 30px;
+}
+
+.form-control {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+
+.form-control input {
+  border: none;
+  outline: none;
+  padding: 15px;
+  width: 80%;
+  border-radius: 5px;
+  background-color: var(--light-gray);
+}
+
+.form-control button {
+  border: none;
+  padding: 12px 30px;
+  background-color: var(--green);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+li {
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.item .span {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 1px solid #000;     
+  margin:0 5px;
+}
+
+.completed {
+  background-color: var(--green) ;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.4);
+  z-index: 100;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.modal .modal-content{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 25px;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 90%;
+  text-align: center;
+  gap: 5px;
+}
+.modal .modal-content input {
+  border: none;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--light-gray);
+
+}
+
+.modal-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.save-btn, .cancel-btn {
+  padding: 6px 12px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
